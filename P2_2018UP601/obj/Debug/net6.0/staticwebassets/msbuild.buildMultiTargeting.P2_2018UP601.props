@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\P2_2018UP601.props" />
+</Project>

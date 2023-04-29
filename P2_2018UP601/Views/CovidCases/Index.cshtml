@@ -1,0 +1,44 @@
+﻿@model IEnumerable<P2_2018UP601.Models.CovidCase>
+
+@{
+    ViewData["Title"] = "Casos reportados";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Crear nuevo registro</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Departamento</th>
+            <th>Provincia</th>
+            <th>Género</th>
+            <th>Casos reportados</th>
+            <th>Casos recuperados</th>
+            <th>Casos activos</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Department</td>
+                <td>@item.Province</td>
+                <td>@item.Gender</td>
+                <td>@item.ReportedCases</td>
+                <td>@item.RecoveredCases</td>
+                <td>@item.ActiveCases</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Detalles</a>
+                    <!-- Aquí puedes agregar otros botones para acciones como Editar o Eliminar -->
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
