@@ -12,5 +12,6 @@ CREATE TABLE CovidCases
     Gender NVARCHAR(50) NOT NULL,
     ReportedCases INT NOT NULL,
     RecoveredCases INT NOT NULL,
-    ActiveCases INT NOT NULL
+    ActiveCases INT NOT NULL, 
+	Deaths INT NOT NULL
 );
