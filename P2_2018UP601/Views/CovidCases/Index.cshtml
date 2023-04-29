@@ -20,6 +20,7 @@
             <th>Casos reportados</th>
             <th>Casos recuperados</th>
             <th>Casos activos</th>
+            <th>Muertes</th>
             <th>Acciones</th>
         </tr>
     </thead>
@@ -34,6 +35,7 @@
                 <td>@item.ReportedCases</td>
                 <td>@item.RecoveredCases</td>
                 <td>@item.ActiveCases</td>
+                <td>@item.Deaths</td>
                 <td>
                     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Detalles</a>
                     <!-- Aquí puedes agregar otros botones para acciones como Editar o Eliminar -->

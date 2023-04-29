@@ -24,5 +24,8 @@ namespace P2_2018UP601.Models
 
         [Required]
         public int ActiveCases { get; set; }
+
+        [Required]
+        public int Deaths { get; set; }
     }
 }
